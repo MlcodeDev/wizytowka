@@ -1,0 +1,168 @@
+/*BEGGINING OF THE RESET*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+html, body{
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/*END OF THE RESET*/
+:root{
+  --box-shadow-offset: 4.688rem;
+
+  --ff-primary: Inter;
+  
+  --fs-34: 2.125rem;
+  --fs-16: 1rem;
+  
+  --fw-700-bold: 700;
+  --fw-300-light: 300;
+
+  --s-3_4: 0.2125rem;
+  --s-1_6: .1rem;
+
+  --clr-black-900: rgba(13, 13, 13, 10);
+  --clr-brown-700: #814926;
+  --clr-brown-900: #5E4037;
+  --clr-orange-400: #FFA280;
+  
+  --clr-f-logo: linear-gradient(91deg, var(--clr-brown-700) 8.66%, var(--clr-orange-400) 50%, var(--clr-brown-900) 91.34%);
+  --clr-f-logo-sub: linear-gradient(95deg, var(--clr-brown-700) 21.06%, var(--clr-orange-400) 50%, var(--clr-brown-900) 78.94%); 
+}
+
+.text-preset-1-logo{
+  font-family: var(--ff-primary);
+  font-size: var(--fs-34);
+  font-weight: var(--fw-700-bold);
+  letter-spacing: var(--s-3_4);
+  text-align: center;
+  background: var(--clr-f-logo);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-preset-2-logo-sub{
+  font-family: var(--ff-primary);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-300-light);
+  letter-spacing: var(--s-1_6);
+  text-align: center;
+  background: var(--clr-f-logo-sub);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.bg-img{
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  filter: brightness(1.1);
+}
+
+.center-div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.card-1-wrapper{
+  background-image: url(assets/component-bg-texture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 31.25rem;
+  width: 62.5rem;
+  border-radius: 50px;
+  filter: brightness(1.8); 
+  box-shadow: var(--box-shadow-offset) var(--box-shadow-offset) 3rem 1rem var(--clr-black-900);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-1-logo-text-wrapper{
+  filter: brightness(0.6); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-1-logo{
+  flex-shrink: 0;
+}
