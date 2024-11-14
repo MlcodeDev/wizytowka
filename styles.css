@@ -105,7 +105,7 @@ textarea:not([rows]) {
   --clr-brown-900: #5E4037;
   --clr-orange-400: #FFA280;
   
-  --clr-f-logo: linear-gradient(91deg, var(--clr-brown-700) 8.66%, var(--clr-orange-400) 50%, var(--clr-brown-900) 91.34%);
+  --clr-f-logo: linear-gradient(123deg, var(--clr-brown-700) 12.83%, var(--clr-orange-400) 46.33%, var(--clr-brown-900) 80.03%);
   --clr-f-logo-sub: linear-gradient(95deg, var(--clr-brown-700) 21.06%, var(--clr-orange-400) 50%, var(--clr-brown-900) 78.94%); 
   --clr-f-name: linear-gradient(34deg, var(--clr-brown-900) 19.91%, var(--clr-orange-400) 50%, var(--clr-brown-700) 80.19%); 
   --clr-f-name-sub: linear-gradient(38deg, var(--clr-brown-900) 21.58%, var(--clr-orange-400) 50%, var(--clr-brown-700) 78.49%);
@@ -306,6 +306,11 @@ textarea:not([rows]) {
 .card-2-socials-wrapper{
   margin-top: 4.426rem;
   margin-left: 1rem;
+}
+
+/* Hide the caret for all elements */
+* {
+  caret-color: transparent;
 }
 
 /* img, h1, h2{ */
