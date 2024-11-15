@@ -1,5 +1,5 @@
 /*BEGGINING OF THE RESET*/
-/* Box sizing rules */
+Box sizing rules
 *,
 *::before,
 *::after {
@@ -191,10 +191,16 @@ textarea:not([rows]) {
   transform: translate(-50%,-50%);
 }
 .insanity {
-  /* margin-top: 10rem; */
+  /* margin-top: 20rem; */
   display: flex;
   flex-direction: column;
   gap: 10rem;
+}
+
+@media screen and (max-width: 1920px){
+  .insanity{
+    margin-top: 20rem;
+  }
 }
 
 .card{
